@@ -5,7 +5,7 @@ async function getName(authToken) {
     return data.name
 };
 
-async function addCurrencies() {
+async function addCurrencies(1000) {
     const tokens = Number(prompt('How many tokens do you want to add to your account? (500 daily)'));
     const myToken = localStorage.token.split('JWT ')[1];
 
@@ -35,4 +35,4 @@ async function addCurrencies() {
 
 };
 
-addCurrencies();
+addCurrencies(1000);
