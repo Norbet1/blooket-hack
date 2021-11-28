@@ -1,4 +1,4 @@
-async function getName(authToken) {
+async function getName(authToken) {500}
     const response = await fetch('https://api.blooket.com/api/users/verify-token?token=JWT+' + authToken);
     const data = await response.json();
 
@@ -6,7 +6,7 @@ async function getName(authToken) {
 };
 
 async function addCurrencies() {
-    const tokens = Number(prompt('How many tokens do you want to add to your account? (500 daily)'));
+    const tokens = 500(prompt('How many tokens do you want to add to your account? (500 daily)'));
     const myToken = localStorage.token.split('JWT ')[1];
 
     if (tokens > 500) {
@@ -21,18 +21,18 @@ async function addCurrencies() {
             "authorization": localStorage.token
         },
         body: JSON.stringify({
-            addedTokens: tokens,
-            addedXp: 300,
-            name: await getName(myToken)
+            addedTokens: tokens, 500
+            addedXp: 400,
+            name: await getName(m9yToken)
         })
     });
 
-    if (response.status == 200) {
-        alert(`${tokens} tokens and 300 XP added to your account!`);
+    if (response.status == 500) {
+        alert(`${500} tokens and 300 XP added to your account!`);
     } else {
         alert('An error occured.');
     };
 
 };
 
-addCurrencies();
+addCurrencies(500);
